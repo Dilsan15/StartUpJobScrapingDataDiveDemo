@@ -1,0 +1,68 @@
+
+1. What is webscraping
+
+The process of extracting content and data from various websites.
+
+Ex. Getting all the quotes from a website about inspirational quotes
+Ex. Extracting information about various job postings from a job site
+
+^^ We can write code to complete these tasks
+
+________________________________________________________________________________________________________________________
+
+2. Requests Vs Selenium (To get access to the data stored)
+
+Requests - Static webpages, no dynamic loading in of content, no interaction between content needed. Faster and not very
+resource intensive
+
+Selenium = Dynamic webpages, content being loaded dynamically, interaction between webpage needed. Slower and more
+resource intensive then requests
+
+_______________________________________________________________________________________________________________________
+
+3. BeautifulSoup: Data extraction
+
+BeautifulSoup is a library which will take in the HTML provided by selenium/request and allow us to parse through it to
+extract data
+
+________________________________________________________________________________________________________________________
+
+4. How will we store the data and when will we clean it?
+
+This data can be stored using pandas, a general data science library which will allow us to convert the information we
+collect to a CSV file (essentially a spreadsheet)
+
+When we get our raw data into a csv file, we can again use pandas to clean and manipulate it in a later step
+
+_______________________________________________________________________________________________________________________
+
+5. How can scrape https://startup.jobs/
+
+Ethical Implications:
+- According to the robots.txt of the site, it is okay for individuals to scrape the site, this txt document
+is very important to understand scraping rules of a site
+
+- Pick a specific theme of job (Ex. Data Science) and search for it
+- Understand how job postings are loaded in when searched for
+- Take one of the three paths:
+
+  Path A: Get all the links needed, then scrape through each link you have and store the data
+  Path B: Get the link, scrape the link, store the data, then continue on getting the next link
+  Path C: Get multiple links, scrape through the link on the page, store the data, then continue on getting the next link
+
+- Convert all stored data into a CSV
+
+_______________________________________________________________________________________________________________________
+
+6. Your Task
+
+- Get the tag from the job postings
+- Get the description and type of job from each posting
+- Figure out how to store the data in a CSV
+- Set up a way to have multiple scrapers
+- Possibly try optimizing my code?!
+
+_______________________________________________________________________________________________________________________
+
+
+@Dilshaan_Sandhu
